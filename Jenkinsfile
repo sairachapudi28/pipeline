@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh 'docker run -p 5000:5000 -d example2'
                 sleep 10
-                sh 'curl http://localhost:5000'
+                sh 'curl http://35.229.88.135:5000'
                 sh 'docker kill $(docker ps -q)'
             }
         }
